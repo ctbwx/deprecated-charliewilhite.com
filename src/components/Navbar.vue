@@ -14,40 +14,14 @@
 
 <script>
 export default {
-  data () {
+  data() {
     return {
       input: '',
-    }
+    };
   },
 };
 </script>
 
-<style>
-.comic {
-  text-align: center;
-  height: 200px;
-  margin-top: 3%;
-  margin-left: 6%;
-  margin-right: 6%;
-  font-family: system-ui;
-  border-color: rgb(129, 73, 251);
-  border-style: solid;
-}
+<style lang="sass">
 
-.buttons {
-  margin: 1%;
-  text-align: center;
-}
-
-.projects {
-  margin-right: 9%;
-}
-
-.resume {
-  margin-right: 9%;
-}
-
-.about-me {
-  margin-left: 9%;
-}
 </style>
