@@ -21,6 +21,7 @@ export default {
 <style lang="scss">
 .parallax {
     /* The image used */
+    position: relative;
     background-image: url('../assets/drmanhattan.jpg');
     display: inline-block;
     border-radius: 5px;
@@ -30,7 +31,7 @@ export default {
     height: 383px;
     width: 1322px;
     margin-top: 2%;
-    margin-left: 16%;
+    margin-left: 22%;
     float: left;
 
     /* Create the parallax scrolling effect */
@@ -45,6 +46,7 @@ export default {
   font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
   margin-top: 1%;
   height: 400px;
+  position: fixed;
 
   .blog {
     font-size: 40px;
@@ -126,17 +128,21 @@ export default {
 }
 
 .main-header {
+  position: absolute;
   font-size: 40px;
   font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
   margin-left: 30%;
+  margin-top: 2%;
   color: rgb(223, 216, 231);
   font-weight: bold;
 }
 
 .sub-header {
+  position: absolute;
   font-size: 30px;
   font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
-  margin-left: 1%;
+  margin-left: 44%;
+  margin-top: 6%;
   color: rgb(134, 125, 143);
 }
 </style>
