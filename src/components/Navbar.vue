@@ -44,7 +44,8 @@ export default {
 .buttons {
   float: left;
   font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
-  margin-top: 1%;
+  margin-top: 4%;
+  margin-left: 4%;
   height: 400px;
   position: fixed;
 
