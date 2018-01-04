@@ -16,7 +16,24 @@ div
 
 <script>
 export default {
-
+  data() {
+    return {
+      activeName: 'first',
+    };
+  },
+  methods: {
+    handleClick(tab) {
+      // eslint-disable-next-line
+      if (tab._uid === 6) {
+        this.$router.push('blog');
+      // eslint-disable-next-line
+      } else if (tab._uid === 7) {
+        this.$router.push('projects');
+      } else {
+        this.$router.push('aboutme');
+      }
+    },
+  },
 };
 </script>
 
