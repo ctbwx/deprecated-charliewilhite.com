@@ -59,11 +59,11 @@ export default {
             position: relative;
             vertical-align: 30%;
         }
+        position: fixed;
         letter-spacing: 0.20em;
         font-weight: 300;
         font-size: 10px;
         color:rgb(182, 182, 182);
-        position: fixed;
         right: 1%;
         top: 1%;
         img {
