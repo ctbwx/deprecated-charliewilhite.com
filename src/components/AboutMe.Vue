@@ -20,7 +20,7 @@
                       br
                       br
                       | When I'm not coding or reading about code, I'm probably gaming or bouldering (rock climbing, but on big rock instead of mountains).
-                      | My favorite games of all time are Dota 2, Dark Souls, and Kingdom Hearts. 
+                      | My favorite games of all time are Dota 2, Dark Souls, and Kingdom Hearts.
 </template>
 
 <script>
