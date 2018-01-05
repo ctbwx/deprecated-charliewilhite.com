@@ -7,7 +7,7 @@
                       br
                       br
                       | I'm a full stack software engineer from Austin, TX.
-                      | In highschool I took advanced placement computer science courses (in Java), at the time I didn't really know what computer science was. It just sounded fun.
+                      | In high school I took advanced placement computer science courses (in Java), at the time I didn't really know what computer science was. It just sounded fun.
                       | I quickly learned that programming was <em>magical</em> and I became obsessed with it.
                       | Since then I've graduated from <a href='https://www.hackreactor.com/' target='_blank'>Hack Reactor</a> in November 2017, 
                       | then was hired on as a Hacker in Residence: Project Lead, where I mentored students, contstructed optional technical sprints, and
