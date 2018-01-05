@@ -2,16 +2,16 @@
 div
     div(class='navbar')
         span(class='header') Charlie Wilhite
-            div(class='social')
-                span(class='follow-sub') Follow me...
-                a(href='https://github.com/simplenclean' target='_blank'): img(src='../assets/github.png')
-                a(href='https://www.instagram.com/simplenclean_/' target='_blank'): img(src='../assets/instagram.png')
-                a(href='https://www.linkedin.com/in/charliewilhite/' target='_blank'): img(src='../assets/linkedin.png')
             <el-tabs class='tabs' v-model='activeName' @tab-click='handleClick'>
                 <el-tab-pane label="Blog" name="first"></el-tab-pane>
                 <el-tab-pane label="Projects" name="second"></el-tab-pane>
                 <el-tab-pane label="About Me" name="third"></el-tab-pane>
             </el-tabs>
+            div(class='social')
+                span(class='follow-sub') Follow me...
+                a(href='https://github.com/simplenclean' target='_blank'): img(src='../assets/github.png')
+                a(href='https://www.instagram.com/simplenclean_/' target='_blank'): img(src='../assets/instagram.png')
+                a(href='https://www.linkedin.com/in/charliewilhite/' target='_blank'): img(src='../assets/linkedin.png')
 </template>
 
 <script>
