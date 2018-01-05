@@ -15,7 +15,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(methodOverride());
 
 app.use(favicon(__dirname + '/public/images/favicon.ico'));
-app.use(express.static(path.join(__dirname, './build')));
+app.use(express.static(path.join(__dirname, './index.html')));
 
 /*-----------------------------------------------ROUTES-----------------------------------------*/
 app.get('*', (req, res) => {
