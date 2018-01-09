@@ -19,7 +19,7 @@ app.use(express.static(path.join(__dirname, 'dist')));
 
 /*-----------------------------------------------ROUTES-----------------------------------------*/
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'dist', 'index.html'));
+  res.redirect('https://' + req.headers.host + req.url);
 });
 /*----------------------------------------------------------------------------------------------*/
 
