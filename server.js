@@ -6,7 +6,10 @@ const favicon = require('serve-favicon');
 const http = require('http');
 
 const app = express();
-const server = http.createServer(app);
+const server = http.createServer((req, res) => {
+  res.writeHead(301, { "Location": "https://" + req.headers['host'] + req.url });
+  res.end();
+});
 
 
 app.use(bodyParser.json());
@@ -19,7 +22,7 @@ app.use(express.static(path.join(__dirname, 'dist')));
 
 /*-----------------------------------------------ROUTES-----------------------------------------*/
 app.get('*', (req, res) => {
-  res.redirect('https://' + req.headers.host + req.url);
+  res.sendFile(path.join(__dirname, 'dist', 'index.html'));
 });
 /*----------------------------------------------------------------------------------------------*/
 
