@@ -6,10 +6,7 @@ const favicon = require('serve-favicon');
 const http = require('http');
 
 const app = express();
-const server = http.createServer((req, res) => {
-  res.writeHead(301, { "Location": "https://" + req.headers['host'] + req.url });
-  res.end();
-});
+const server = http.createServer(app);
 
 
 app.use(bodyParser.json());
@@ -29,4 +26,4 @@ app.get('*', (req, res) => {
 const port = process.env.PORT || 3001;
 server.listen(port);
 
-console.log(`Server listening on ${port}`);
+console.log(`Server listening on ${port}`);``
