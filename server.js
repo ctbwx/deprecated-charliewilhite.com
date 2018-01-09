@@ -3,10 +3,10 @@ const path = require('path');
 const methodOverride = require('method-override');
 const bodyParser = require('body-parser');
 const favicon = require('serve-favicon');
-const http = require('http');
+const https = require('https');
 
 const app = express();
-const server = http.createServer(app);
+const server = https.createServer(app);
 
 
 app.use(bodyParser.json());
