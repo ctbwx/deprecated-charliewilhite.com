@@ -8,15 +8,15 @@ const http = require('http');
 const app = express();
 const server = http.createServer(app);
 
-const enforceHttps = (req, res, next) => {
-  if (!req.secure &&
-    req.get("x-forwarded-proto") !== "https" &&
-    process.env.NODE_ENV === "production") {
-    res.redirect(301, `https://${req.get("host")}${req.url}`);
-  } else {
-    next();
-  }
-}
+// const enforceHttps = (req, res, next) => {
+//   if (!req.secure &&
+//     req.get("x-forwarded-proto") !== "https" &&
+//     process.env.NODE_ENV === "production") {
+//     res.redirect(301, `https://${req.get("host")}${req.url}`);
+//   } else {
+//     next();
+//   }
+// }
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -24,7 +24,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(methodOverride());
 
 app.use(favicon(__dirname + '/public/images/favicon.ico'));
-app.use(enforceHttps);
+// app.use(enforceHttps);
 app.use(express.static(path.join(__dirname, 'dist')));
 
 /*-----------------------------------------------ROUTES-----------------------------------------*/
