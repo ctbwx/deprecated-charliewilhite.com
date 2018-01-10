@@ -6,6 +6,9 @@
       p(class='info') Hello, my name is Charlie.
                       br
                       br
+                      span(class='detail') Background
+                      br
+                      br
                       | I'm a full stack software engineer from Austin, TX.
                       | In high school I took advanced placement computer science courses (in Java), at the time I didn't really know what computer science was. It just sounded fun.
                       | I quickly learned that programming was <em>magical</em> and I became obsessed with it.
@@ -14,9 +17,15 @@
                       | honed my skills as a software engineer.
                       br
                       br
+                      span(class='detail') Current
+                      br
+                      br
                       | Currently I'm looking for opportunities to learn more about machine learning, and recursive neural networks. I have a curiosity for data science, as
                       | I believe a further understanding of it will lead us to our next monumental technological breakthrough. Also being able to <em>create a brain</em>
                       | seems pretty damn cool.
+                      br
+                      br
+                      span(class='detail') Personal
                       br
                       br
                       | When I'm not coding or reading about code, I'm probably gaming or bouldering (rock climbing, but on big rock instead of mountains).
@@ -43,9 +52,15 @@ export default {
     width: 75%;
     height: 75%;
     transform: translateY(25%);
-    font-family: Source Sans Pro, Helvetica Neue, Arial,sans-serif;
-    font-weight: 300;
+    font-family: Source Sans Pro,Helvetica Neue,Arial,sans-serif;
     font-size: 16px;
+  }
+  .detail {
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    font-size: 16px;
+    font-weight: 300;
+    color: rgb(182, 182, 182);
   }
   @media screen and (max-width: 500px) {
     .aboutme {

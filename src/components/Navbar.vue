@@ -51,8 +51,8 @@ export default {
     font-family: Source Sans Pro, Helvetica Neue, Arial,sans-serif;
     text-transform: uppercase;
     letter-spacing: 0.26em;
-    font-weight: 550;
-    font-size: 20px;
+    font-weight: 590;
+    font-size: 22px;
   }
   .social {
     .follow-sub {
