@@ -15,5 +15,10 @@ export default new Router({
       name: 'About Me',
       component: AboutMe,
     },
+    {
+      path: '/blog',
+      name: 'Blog',
+      component: Blog
+    },
   ],
 });
