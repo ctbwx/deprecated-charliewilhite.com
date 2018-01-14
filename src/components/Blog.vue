@@ -47,7 +47,6 @@ export default {
     line-height: 1.3em;
   }
   .main {
-    flex: 2;
     font-style: normal;
     font-variant-ligatures: normal;
     font-variant-caps: normal;

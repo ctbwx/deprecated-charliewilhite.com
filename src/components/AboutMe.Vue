@@ -51,24 +51,28 @@ export default {
     justify-content: center;
     width: 75%;
     height: 75%;
-    transform: translateY(25%);
-    font-family: Source Sans Pro,Helvetica Neue,Arial,sans-serif;
-    font-size: 16px;
+    padding-top: 5%;
+    font-style: normal;
+    font-variant-ligatures: normal;
+    font-variant-caps: normal;
+    font-variant-numeric: normal;
+    font-variant-east-asian: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 1.9em;
+    font-family: Merriweather, Georgia, serif;
   }
   .detail {
     text-transform: uppercase;
+    font-family: Source Sans Pro, Helvetica Neue, Arial,sans-serif;
     letter-spacing: 0.18em;
     font-size: 16px;
     font-weight: 300;
     color: rgb(182, 182, 182);
   }
-  @media screen and (max-width: 500px) {
-    .aboutme {
-      transform: translateY(5%);
-    }
-  }
   .pic {
     flex: 1;
+    transform: translateY(25%);
     max-width: 600px;
     max-height: 400px;
     -moz-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
