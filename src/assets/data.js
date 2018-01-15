@@ -26,7 +26,7 @@ const data = {
     },
     {
       id: 4,
-      title: 'How to asdfasddfasdfasdfdasdfdasddfsa',
+      title: 'How to do stuff, thats cool with a long ass title. for sure my dude.',
       teaser: 'First you download the vue cli, then you hit run. done. ez.',
       body: 'First you download the vue cli, then you hit run. done. ez.First you download the vue cli, then you hit run. donFirst you download the vue cli, then you hit run. done. ez.First you download the vue cli, then you hit run. done. ez.First you download the vue cli, then you hit run. done. ez.First you download the vue cli, then you hit run. done. ez.',
       thumbnail: ['https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Hot_dog_with_mustard.png/1200px-Hot_dog_with_mustard.png'],
