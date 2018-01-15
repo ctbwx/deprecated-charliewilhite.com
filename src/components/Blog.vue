@@ -35,11 +35,47 @@ export default {
     display: flex;
     flex-direction: row;
     margin: 5%;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 1px 2px rgba(0,0,0,0.15), 0 1px 8px rgba(0,0,0,0.1);
+    transition: all 0.3s ease-in-out;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translateZ(0) scale(1.0, 1.0);
+    -webkit-font-smoothing: antialiased !important;
+    transform: translateZ(0);
+  }
+  .entry::after {
+    content: "";
+    border-radius: 5px;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  }
+  .entry:hover {
+    -webkit-transform: scale(1.25, 1.25);
+    transform: scale(1.01, 1.01);
+  }
+
+  .entry:hover::after {
+    opacity: 1;
   }
   .main {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    backface-visibility: hidden;
+    transform: translateZ(0) scale(1.0, 1.0);
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translateZ(0) scale(1.0, 1.0);
+    -webkit-font-smoothing: antialiased !important;
   }
   .blog-header {
     display: block;
