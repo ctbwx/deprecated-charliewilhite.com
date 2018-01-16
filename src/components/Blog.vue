@@ -4,7 +4,8 @@
       el-container(class='main')
         span(class='blog-header') {{ item.title }}
         el-main(class='body') {{ item.teaser }}
-        el-footer(class='footer-text') {{ item.createdAt }}
+        el-footer(class='footer') 
+          span(class='footer-text') {{ item.createdAt }}
       el-aside(class='aside' v-if='item.thumbnail.length')
         img(class='aside-image' :src='item.thumbnail')
 </template>
@@ -108,7 +109,7 @@ export default {
     font-weight: normal;
     font-stretch: normal;
     font-size: 15px;
-    line-height: 1.9em;
+    line-height: 2em;
     font-family: Merriweather, Georgia, serif;
   }
   .footer-text {
@@ -121,8 +122,9 @@ export default {
     color: rgb(182, 182, 182);
   }
   @media screen and (max-width: 1000px) {
+    .blog { width: 90% }
     .entry { flex-direction: column; }
-    .blog-header { 
+    .blog-header {
       padding-top: 10%;
       font-size: 1.8em;
     }
