@@ -7,8 +7,6 @@
 /* eslint-disable arrow-body-style */
 import data from '@/assets/data';
 
-console.log(store);
-
 export default {
   data() {
     return {

@@ -23,11 +23,10 @@ export default {
   },
   methods: {
     handleClick(tab) {
-      // eslint-disable-next-line
-      if (tab._uid === 6) {
+      console.log(this.$store.state.blog);
+      if (tab.label === 'Blog') {
         this.$router.push('blog');
-      // eslint-disable-next-line
-      } else if (tab._uid === 7) {
+      } else if (tab.label === 'Projects') {
         this.$router.push('projects');
       } else {
         this.$router.push('aboutme');
