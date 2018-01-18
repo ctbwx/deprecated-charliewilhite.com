@@ -23,7 +23,6 @@ export default {
   },
   methods: {
     handleClick(tab) {
-      console.log(this.$store.state.blog);
       if (tab.label === 'Blog') {
         this.$router.push('blog');
       } else if (tab.label === 'Projects') {
