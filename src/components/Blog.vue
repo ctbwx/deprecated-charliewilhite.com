@@ -1,24 +1,47 @@
 <template lang="pug">
   div(class='blog')
-    el-container(class='entry' v-for='item in blogs' :key='item.id')
-      el-container(class='main')
-        span(class='blog-header') {{ item.title }}
-        el-main(class='body') {{ item.teaser }}
-        el-footer(class='footer') 
-          span(class='footer-text') {{ item.createdAt }}
-      el-aside(class='aside' v-if='item.thumbnail.length')
-        img(class='aside-image' :src='item.thumbnail')
+    el-container(class='entry' v-on:click.native="detail" v-for='item in blogs' :id='item.id' :key='item.id') 
+        el-container(class='main') 
+          span(class='blog-header') {{ item.title }}
+          el-main(class='body') {{ item.teaser }}
+          el-footer(class='footer') 
+            span(class='footer-text') {{ item.created_at | moment }}
+        el-aside(class='aside' v-if='item.thumbnail !== null')
+          img(class='aside-image' :src='item.thumbnail')
 </template>
 
 <script>
 /* eslint arrow-body-style: ["error", "always"] */
 import data from '@/assets/data';
+import axios from 'axios';
+import moment from 'moment';
 
 export default {
   data: () => {
     return {
       blogs: data.blog,
+      errors: [],
     };
+  },
+  async created() {
+    try {
+      const response = await axios.get('/api/blog');
+      this.blogs = response.data;
+    } catch (e) {
+      this.errors.push(e);
+    }
+  },
+  filters: {
+    moment: (date) => {
+      return moment(date).format('MMM Do YY');
+    },
+  },
+  methods: {
+    detail: () => {
+      // const id = event.currentTarget.getAttribute('id');
+      // this.$route.push(`blog/${id}`);
+      console.log(this.$route);
+    },
   },
 };
 </script>
@@ -33,6 +56,7 @@ export default {
     flex-direction: column;
   }
   .entry {
+    cursor: pointer;
     display: flex;
     flex-direction: row;
     margin: 5%;
