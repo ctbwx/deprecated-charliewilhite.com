@@ -6,8 +6,6 @@ import Projects from '../components/projects';
 import Blog from '../components/blog';
 import BlogDetail from '../components/blogdetail';
 
-Vue.use(Router);
-
 export default new Router({
   mode: 'history',
   routes: [
