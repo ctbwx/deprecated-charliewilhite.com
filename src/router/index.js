@@ -26,5 +26,10 @@ export default new Router({
       name: 'Blog Detail',
       component: BlogDetail
     },
+    {
+      path: '*',
+      name: 'Not found',
+      component:  {}
+    },
   ],
 });
