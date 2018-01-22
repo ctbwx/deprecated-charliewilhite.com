@@ -46,8 +46,14 @@ export default {
 </script>
 
 <style lang="scss">
-  body::-webkit-scrollbar { 
-    display: none; 
+  ::-webkit-scrollbar { 
+    width: 5px;
+
+  }
+  ::-webkit-scrollbar-thumb { 
+    -webkit-border-radius: 20px;
+    border-radius: 15px;
+    background: rgba(0, 0, 0, 0.8); 
   }
   .blog {
     width: 80%;

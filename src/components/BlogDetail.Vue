@@ -3,7 +3,7 @@
     h1(class='header') {
     div(class='body')
       h1 title: 
-        span {{ blog.title }}
+        span {{ '"' + blog.title + '",' }}
       h1 body: 
         <blogBody/>
     h1(class='footer') }
@@ -46,26 +46,23 @@ export default {
 
   ::-webkit-scrollbar { 
     width: 5px;
-    height: 8px;
-    background-color: orange;
-  }
-  ::-webkit-scrollbar-track { 
-    width: 5px;
-    height: 8px;
-    background-color: orange;
+
   }
   ::-webkit-scrollbar-thumb { 
-    width: 5px;
-    height: 8px;
-    background-color: orange;
+    -webkit-border-radius: 20px;
+    border-radius: 15px;
+    background: rgba(0, 0, 0, 0.8); 
   }
-
   .blog-detail {
+    font-family: Roboto Mono;
     width: 80%;
     margin: auto;
     padding-top: 5%;
     left: 0;
     right: 0;
     flex-direction: column;
+  }
+  .body {
+    padding-left: 3%;
   }
 </style>

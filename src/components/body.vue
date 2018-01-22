@@ -1,5 +1,5 @@
 <template lang="pug">
-  div(class='body')
+  div(class='detail')
     div(class='container' v-for='item in body')
       ul(v-if='item.p')
         p {{ item.p }}
@@ -36,5 +36,8 @@ export default {
 </script>
 
 <style lang="scss">
-
+.detail {
+  display: flex;
+  flex-direction: column;
+}
 </style>
