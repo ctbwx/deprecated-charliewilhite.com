@@ -45,7 +45,6 @@ app.get('/api/blog/:id', (req, res) => {
   console.log('/blog route triggered.', req.url);
   return db('blogs').where({ id: req.params.id }).select('*')
   .then(data => {
-    console.log(data)
     res.send(data);
   })
   .catch(err => {

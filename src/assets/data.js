@@ -4,7 +4,23 @@ const data = {
       id: 1,
       title: 'How to set up a vue.js app.',
       teaser: 'First you download the vue cli, then you hit run. done. ez. The quick brown fox jumps over theThe quick brown fox jumps over the lThe quick brown fox jumps over the lThe quick brown fox jumps over the lThe quick brown fox jumps over the lThe quick brown fox jumps over the l lazy dog',
-      body: 'First you download the vue cli, then you hit run. done. ez.First you download the vue cli, then you hit run. donFirst you download the vue cli, then you hit run. done. ez.First you download the vue cli, then you hit run. done. ez.First you download the vue cli, then you hit run. done. ez.First you download the vue cli, then you hit run. done. ez.',
+      body: [
+        {
+          p: 'this is a paragraph inside of an object to achieve dynamic list rendering with Vue.js! why did I make this blog from scratch, might as well have used jQeury.',
+        },
+        {
+          img: 'https://cdn3.dualshockers.com/wp-content/uploads/2017/09/MonsterHunterWorld-31.jpg',
+        },
+        {
+          img: 'https://cdn3.dualshockers.com/wp-content/uploads/2017/09/MonsterHunterWorld-31.jpg',
+        },
+        {
+          p: 'this is a paragraph inside of an object to achieve dynamic list rendering with Vue.js! why did I make this blog from scratch, might as well have u',
+        },
+        {
+          p: 'this is a paragraph inside of an object to achieve dynamic list rendering with Vue.js! why did I make this blog from scratch, might as well have u',
+        },
+      ],
       thumbnail: [],
       createdAt: '1/11/2017',
     },
