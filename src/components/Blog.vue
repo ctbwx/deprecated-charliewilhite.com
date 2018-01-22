@@ -12,14 +12,14 @@
 
 <script>
 /* eslint arrow-body-style: ["error", "always"] */
-import data from '@/assets/data';
 import axios from 'axios';
 import moment from 'moment';
+// import data from '../assets/data';
 
 export default {
-  data: () => {
+  data() {
     return {
-      blogs: data.blog,
+      blogs: [],
       errors: [],
     };
   },
@@ -39,7 +39,7 @@ export default {
   methods: {
     detail() {
       const id = event.currentTarget.getAttribute('id');
-      this.$router.replace(`blog/${id}`);
+      this.$router.push(`/blog/${id}`);
     },
   },
 };
