@@ -42,7 +42,6 @@ app.get('/api/blog', (req, res) => {
 });
 
 app.get('/api/blog/:id', (req, res) => {
-  console.log('/blog route triggered.', req.url);
   return db('blogs').where({ id: req.params.id }).select('*')
   .then(data => {
     res.send(data);
@@ -51,6 +50,19 @@ app.get('/api/blog/:id', (req, res) => {
     console.error(err);
     res.end('Unable to fetch blog.');
   });
+});
+
+app.post('/api/blog', (req, res) => {
+  console.log('posting body');
+  return db('blogs').insert(req.body)
+  .then(data => {
+    console.log('success');
+    res.send(data);
+  })
+  .catch(err => {
+    console.error(err);
+    res.end('Unable to post with this body.')
+  })
 });
 
 
