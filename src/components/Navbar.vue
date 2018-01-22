@@ -2,7 +2,7 @@
 div
   div(class='navbar')
     span(class='header' v-on:click='header') Charlie Wilhite
-    <el-tabs v-model='activeName' @tab-click='handleClick'>
+    <el-tabs@tab-click='handleClick'>
       <el-tab-pane label="Blog" name="first"></el-tab-pane>
       <el-tab-pane label="Projects" name="second"></el-tab-pane>
       <el-tab-pane label="About Me" name="third"></el-tab-pane>
@@ -18,7 +18,6 @@ div
 export default {
   data() {
     return {
-      activeName: 'first',
     };
   },
   methods: {

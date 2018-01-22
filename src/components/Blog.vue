@@ -37,10 +37,9 @@ export default {
     },
   },
   methods: {
-    detail: () => {
-      // const id = event.currentTarget.getAttribute('id');
-      // this.$route.push(`blog/${id}`);
-      console.log(this.$router);
+    detail() {
+      const id = event.currentTarget.getAttribute('id');
+      this.$router.push(`blog/${id}`);
     },
   },
 };
