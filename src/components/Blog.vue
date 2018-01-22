@@ -14,12 +14,12 @@
 /* eslint arrow-body-style: ["error", "always"] */
 import axios from 'axios';
 import moment from 'moment';
-// import data from '../assets/data';
+import data from '../assets/data';
 
 export default {
   data() {
     return {
-      blogs: [],
+      blogs: data.blog,
       errors: [],
     };
   },
