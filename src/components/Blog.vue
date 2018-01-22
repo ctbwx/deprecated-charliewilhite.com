@@ -48,7 +48,7 @@ export default {
 <style lang="scss">
   ::-webkit-scrollbar { 
     width: 5px;
-
+    height: 5px;
   }
   ::-webkit-scrollbar-thumb { 
     -webkit-border-radius: 20px;

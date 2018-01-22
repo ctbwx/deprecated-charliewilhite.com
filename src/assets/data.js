@@ -6,10 +6,10 @@ const data = {
       teaser: 'First you download the vue cli, then you hit run. done. ez. The quick brown fox jumps over theThe quick brown fox jumps over the lThe quick brown fox jumps over the lThe quick brown fox jumps over the lThe quick brown fox jumps over the lThe quick brown fox jumps over the l lazy dog',
       body: [
         {
-          p: 'this is a paragraph inside of an object to achieve dynamic list rendering with Vue.js! why did I make this blog from scratch, might as well have used jQeury.',
+          p: 'this is a paragraph inside of an object to achieve dynamic list rendering with Vue.js! why did I make this blog from scratch, might as well have used jQeury. Below you will find a completely unrelated picture on Monster Hunte W',
         },
         {
-          img: 'https://cdn3.dualshockers.com/wp-content/uploads/2017/09/MonsterHunterWorld-31.jpg',
+          img: 'https://upload.wikimedia.org/wikipedia/commons/2/2c/Rotating_earth_%28large%29.gif',
         },
         {
           img: 'https://cdn3.dualshockers.com/wp-content/uploads/2017/09/MonsterHunterWorld-31.jpg',

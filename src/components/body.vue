@@ -1,10 +1,8 @@
 <template lang="pug">
   div(class='detail')
     div(class='container' v-for='item in body')
-      ul(v-if='item.p')
-        p {{ item.p }}
-      ul(v-if='item.img')
-        img(:src='item.img')
+      p(class='para' v-if='item.p') {{ item.p }}
+      img(class='img' v-if='item.img' :src='item.img')
 </template>
 
 <script>
@@ -36,8 +34,22 @@ export default {
 </script>
 
 <style lang="scss">
-.detail {
-  display: flex;
-  flex-direction: column;
-}
+  .detail {
+    display: flex;
+    flex-direction: column;
+    font-style: normal;
+    font-variant-ligatures: normal;
+    font-variant-caps: normal;
+    font-variant-numeric: normal;
+    font-variant-east-asian: normal;
+    font-weight: normal;
+    font-stretch: normal;
+    font-size: 22px;
+    line-height: 1.75em;
+    font-family: Merriweather, Georgia, serif;
+  }
+  .img {
+    width: 100%;
+    height: 100%;
+  }
 </style>

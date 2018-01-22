@@ -1,12 +1,9 @@
 <template lang="pug">
   div(class='blog-detail')
-    h1(class='header') {
     div(class='body')
-      h1 title: 
-        span {{ '"' + blog.title + '",' }}
-      h1 body: 
-        <blogBody/>
-    h1(class='footer') }
+    h1 {{ blog.title }}
+      <blogBody/>
+    span(class='createdAt') {{ blog.createdAt }}
 </template>
 
 <script>
@@ -46,7 +43,7 @@ export default {
 
   ::-webkit-scrollbar { 
     width: 5px;
-
+    height: 5px;
   }
   ::-webkit-scrollbar-thumb { 
     -webkit-border-radius: 20px;
@@ -64,5 +61,8 @@ export default {
   }
   .body {
     padding-left: 3%;
+  }
+  .createdAt {
+    color: rgb(182, 182, 182);
   }
 </style>
