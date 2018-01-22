@@ -32,20 +32,23 @@ export default {
     }
   },
   filters: {
-    moment: (date) => {
+    moment(date) {
       return moment(date).format('MMM Do YY');
     },
   },
   methods: {
     detail() {
       const id = event.currentTarget.getAttribute('id');
-      this.$router.push(`blog/${id}`);
+      this.$router.replace(`blog/${id}`);
     },
   },
 };
 </script>
 
 <style lang="scss">
+  body::-webkit-scrollbar { 
+    display: none; 
+  }
   .blog {
     width: 80%;
     margin: auto;

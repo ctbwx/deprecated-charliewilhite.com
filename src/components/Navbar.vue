@@ -23,11 +23,11 @@ export default {
   methods: {
     handleClick(tab) {
       if (tab.label === 'Blog') {
-        this.$router.push('blog');
+        this.$router.replace('blog');
       } else if (tab.label === 'Projects') {
-        this.$router.push('projects');
+        this.$router.replace('projects');
       } else {
-        this.$router.push('aboutme');
+        this.$router.replace('aboutme');
       }
     },
     header() {
