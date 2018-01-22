@@ -1,13 +1,13 @@
 <template lang="pug">
   div(class='blog')
-    el-container(class='entry' v-on:click.native="detail" v-for='item in blogs' :id='item.id' :key='item.id') 
-        el-container(class='main') 
-          span(class='blog-header') {{ item.title }}
-          el-main(class='body') {{ item.teaser }}
-          el-footer(class='footer') 
-            span(class='footer-text') {{ item.created_at | moment }}
-        el-aside(class='aside' v-if='item.thumbnail !== null')
-          img(class='aside-image' :src='item.thumbnail')
+    el-container(class='entry' v-on:click.native="detail" v-for='item in blogs' :id='item.id' :key='item.id' :to="{path: 'thepath'}")
+      el-container(class='main') 
+        span(class='blog-header') {{ item.title }}
+        el-main(class='body') {{ item.teaser }}
+        el-footer(class='footer') 
+          span(class='footer-text') {{ item.created_at | moment }}
+      el-aside(class='aside' v-if='item.thumbnail !== null')
+        img(class='aside-image' :src='item.thumbnail')
 </template>
 
 <script>
@@ -40,7 +40,7 @@ export default {
     detail: () => {
       // const id = event.currentTarget.getAttribute('id');
       // this.$route.push(`blog/${id}`);
-      console.log(this.$route);
+      console.log(this.$router);
     },
   },
 };
