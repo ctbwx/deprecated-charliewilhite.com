@@ -1,13 +1,13 @@
 <template lang="pug">
   div(class='blog-detail')
     div(class='body')
-    h1 {{ blog.title }}
+    h1(v-on:click="click") {{ blog.title }}
       <blogBody/>
     span(class='createdAt') {{ blog.createdAt | moment }}
 </template>
 
 <script>
-import data from '@/assets/data';
+// import data from '@/assets/data';
 import axios from 'axios';
 import moment from 'moment';
 import Body from './body';
@@ -15,7 +15,7 @@ import Body from './body';
 export default {
   data() {
     return {
-      blog: data.blog[0],
+      blog: [],
       errors: [],
     };
   },
@@ -30,6 +30,16 @@ export default {
   filters: {
     moment(date) {
       return moment(date).format('MMM Do YY');
+    },
+  },
+  methods: {
+    click() {
+      axios.post('/api/blog', {
+        title: 'How to send JSON over http.',
+        teaser: 'Please freaking work omg pleas',
+        body: JSON.stringify([{ p: 'this is a paragraph, hopefully if this http request works.' }, { img: 'https://s7d1.scene7.com/is/image/PETCO/cat-category-090617-369w-269h-hero-cutout-d?fmt=png-alpha' }, { p: 'ajs;dlkfjas;lkdfja;klsdjfl;kasdjf;oij iofjio eqwf;jklasdj f;oiasdj f;oalisd' }]),
+        thumbnail: '',
+      });
     },
   },
   components: {

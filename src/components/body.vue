@@ -1,6 +1,6 @@
 <template lang="pug">
   div(class='detail')
-    div(class='container' v-for='item in bodyDetail')
+    div(class='container' v-for='item in body')
       p(class='para' v-if='item.p') {{ item.p }}
       img(class='img' v-if='item.img' :src='item.img')
 </template>
@@ -8,12 +8,12 @@
 <script>
 import axios from 'axios';
 import moment from 'moment';
-import data from '@/assets/data';
+// import data from '@/assets/data';
 
 export default {
   data() {
     return {
-      bodyDetail: JSON.parse(data.blog[0].body),
+      body: [],
       errors: [],
     };
   },
