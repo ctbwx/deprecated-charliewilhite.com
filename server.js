@@ -42,6 +42,7 @@ app.get('/api/blog', (req, res) => {
 });
 
 app.get('/api/blog/:id', (req, res) => {
+  console.log('fetched');
   return db('blogs').where({ id: req.params.id }).select('*')
   .then(data => {
     res.send(data);
@@ -53,10 +54,8 @@ app.get('/api/blog/:id', (req, res) => {
 });
 
 app.post('/api/blog', (req, res) => {
-  console.log('posting body');
   return db('blogs').insert(req.body)
   .then(data => {
-    console.log('success');
     res.send(data);
   })
   .catch(err => {

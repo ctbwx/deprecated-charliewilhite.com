@@ -3,7 +3,7 @@
     div(class='body')
     h1 {{ blog.title }}
       <blogBody/>
-    span(class='createdAt') {{ blog.createdAt }}
+    span(class='createdAt') {{ blog.createdAt | moment }}
 </template>
 
 <script>

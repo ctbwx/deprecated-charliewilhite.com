@@ -1,6 +1,6 @@
 <template lang="pug">
   div(class='blog')
-    el-container(class='entry' v-on:click.native="detail" v-for='item in blogs' :id='item.id' :key='item.id' :to="{path: 'thepath'}")
+    el-container(class='entry' v-on:click.native="detail" v-for='item in blogs' :id='item.id' :key='item.id')
       el-container(class='main') 
         span(class='blog-header') {{ item.title }}
         el-main(class='body') {{ item.teaser }}
@@ -14,12 +14,12 @@
 /* eslint arrow-body-style: ["error", "always"] */
 import axios from 'axios';
 import moment from 'moment';
-import data from '../assets/data';
+// import data from '../assets/data';
 
 export default {
   data() {
     return {
-      blogs: data.blog,
+      blogs: [],
       errors: [],
     };
   },

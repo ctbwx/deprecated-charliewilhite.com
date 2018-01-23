@@ -1,6 +1,6 @@
 <template lang="pug">
   div(class='detail')
-    div(class='container' v-for='item in body')
+    div(class='container' v-for='item in bodyDetail')
       p(class='para' v-if='item.p') {{ item.p }}
       img(class='img' v-if='item.img' :src='item.img')
 </template>
@@ -13,14 +13,14 @@ import data from '@/assets/data';
 export default {
   data() {
     return {
-      body: data.blog[0].body,
+      bodyDetail: JSON.parse(data.blog[0].body),
       errors: [],
     };
   },
   async created() {
     try {
       const response = await axios.get(`/api/blog/${this.$route.params.id}`);
-      this.body = response.data[0].body;
+      this.body = JSON.parse(response.data[0].body);
     } catch (e) {
       this.errors.push(e);
     }

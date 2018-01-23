@@ -4,25 +4,10 @@ const data = {
       id: 1,
       title: 'How to set up a vue.js app.',
       teaser: 'First you download the vue cli, then you hit run. done. ez. The quick brown fox jumps over theThe quick brown fox jumps over the lThe quick brown fox jumps over the lThe quick brown fox jumps over the lThe quick brown fox jumps over the lThe quick brown fox jumps over the l lazy dog',
-      body: [
-        {
-          p: 'this is a paragraph inside of an object to achieve dynamic list rendering with Vue.js! why did I make this blog from scratch, might as well have used jQeury. Below you will find a completely unrelated picture on Monster Hunte W',
-        },
-        {
-          img: 'https://upload.wikimedia.org/wikipedia/commons/2/2c/Rotating_earth_%28large%29.gif',
-        },
-        {
-          img: 'https://cdn3.dualshockers.com/wp-content/uploads/2017/09/MonsterHunterWorld-31.jpg',
-        },
-        {
-          p: 'this is a paragraph inside of an object to achieve dynamic list rendering with Vue.js! why did I make this blog from scratch, might as well have u',
-        },
-        {
-          p: 'this is a paragraph inside of an object to achieve dynamic list rendering with Vue.js! why did I make this blog from scratch, might as well have u',
-        },
-      ],
+      // eslint-disable-next-line
+      body: '[{"p": "asdfasdfasdfasdf"}, {"p": "asdfasdfasdfasdf"}, {"img":"https://vuejs.org/images/logo.png"}, {"img": "http://www.telegraph.co.uk/content/dam/Travel/galleries/travel/activityandadventure/The-worlds-most-beautiful-mountains/mountains-fitzroy_3374108a.jpg"}]',
       thumbnail: [],
-      createdAt: '1/11/2017',
+      createdAt: '2018-01-22T23:58:02.220Z',
     },
     {
       id: 2,
