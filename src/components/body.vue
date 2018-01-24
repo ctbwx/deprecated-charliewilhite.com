@@ -1,5 +1,5 @@
 <template lang="pug">
-  div(class='detail')
+  div(class='bodyDetail')
     div(class='container' v-for='item in body')
       p(class='para' v-if='item.p') {{ item.p }}
       img(class='img' v-if='item.img' :src='item.img')
@@ -34,7 +34,7 @@ export default {
 </script>
 
 <style lang="scss">
-  .detail {
+  .bodyDetail {
     display: flex;
     flex-direction: column;
     font-style: normal;

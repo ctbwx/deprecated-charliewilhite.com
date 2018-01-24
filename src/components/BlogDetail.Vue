@@ -32,16 +32,6 @@ export default {
       return moment(date).format('MMM Do YY');
     },
   },
-  methods: {
-    click() {
-      axios.post('/api/blog', {
-        title: 'How to send JSON over http.',
-        teaser: 'Please freaking work omg pleas',
-        body: JSON.stringify([{ p: 'this is a paragraph, hopefully if this http request works.' }, { img: 'https://s7d1.scene7.com/is/image/PETCO/cat-category-090617-369w-269h-hero-cutout-d?fmt=png-alpha' }, { p: 'ajs;dlkfjas;lkdfja;klsdjfl;kasdjf;oij iofjio eqwf;jklasdj f;oiasdj f;oalisd' }]),
-        thumbnail: '',
-      });
-    },
-  },
   components: {
     blogBody: Body,
   },
