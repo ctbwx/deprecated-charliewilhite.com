@@ -13,7 +13,7 @@ import data from '@/assets/data';
 export default {
   data() {
     return {
-      body: JSON.parse(data.blog[0].body),
+      body: [],
       errors: [],
     };
   },

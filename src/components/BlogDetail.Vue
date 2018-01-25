@@ -14,7 +14,7 @@ import Body from './body';
 export default {
   data() {
     return {
-      blog: data.blog[0],
+      blog: [],
       errors: [],
     };
   },
