@@ -44,7 +44,7 @@ export default {
     font-variant-east-asian: normal;
     font-weight: normal;
     font-stretch: normal;
-    font-size: 22px;
+    font-size: 20px;
     line-height: 1.75em;
     font-family: Merriweather, Georgia, serif;
   }

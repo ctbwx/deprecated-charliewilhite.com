@@ -1,7 +1,7 @@
 <template lang="pug">
   div(class='blog-detail')
     div(class='body')
-    h1(v-on:click="click") {{ blog.title }}
+    h1 {{ blog.title }}
       <blogBody/>
     span(class='createdAt') {{ blog.createdAt | moment }}
 </template>
