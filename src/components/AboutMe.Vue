@@ -1,5 +1,5 @@
 <template lang="pug">
-  div(class='container')
+  div(class='about-container')
     div(class='aboutme')
       img(class='pic' src='../assets/charlie4.jpg')
       div(class='buffer')
@@ -39,7 +39,7 @@ export default {
 </script>
 
 <style lang="scss">
-  .container {
+  .about-container {
     display:-webkit-box;
     -webkit-box-align:center;
     -webkit-box-pack:center;

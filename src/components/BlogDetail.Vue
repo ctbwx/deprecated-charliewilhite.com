@@ -1,13 +1,12 @@
 <template lang="pug">
   div(class='blog-detail')
-    div(class='body')
     h1 {{ blog.title }}
-      <blogBody/>
+    <blogBody/>
     span(class='createdAt') {{ blog.createdAt | moment }}
 </template>
 
 <script>
-// import data from '@/assets/data';
+import data from '@/assets/data';
 import axios from 'axios';
 import moment from 'moment';
 import Body from './body';
@@ -15,7 +14,7 @@ import Body from './body';
 export default {
   data() {
     return {
-      blog: [],
+      blog: data.blog[0],
       errors: [],
     };
   },
@@ -29,7 +28,7 @@ export default {
   },
   filters: {
     moment(date) {
-      return moment(date).format('MMM Do YY');
+      return moment(date).format('MMMM Do YYYY, h:mm:ss a');
     },
   },
   components: {
@@ -51,6 +50,7 @@ export default {
     background: rgba(0, 0, 0, 0.8); 
   }
   .blog-detail {
+    display: flex;
     font-family: Roboto Mono;
     width: 80%;
     margin: auto;
@@ -59,7 +59,7 @@ export default {
     right: 0;
     flex-direction: column;
   }
-  .body {
+  .body-post {
     padding-left: 3%;
   }
   .createdAt {

@@ -8,12 +8,12 @@
 <script>
 import axios from 'axios';
 import moment from 'moment';
-// import data from '@/assets/data';
+import data from '@/assets/data';
 
 export default {
   data() {
     return {
-      body: [],
+      body: JSON.parse(data.blog[0].body),
       errors: [],
     };
   },
@@ -27,7 +27,7 @@ export default {
   },
   filters: {
     moment(date) {
-      return moment(date).format('MMM Do YY');
+      return moment(date).format('MMMM Do YYYY, h:mm:ss a');
     },
   },
 };
@@ -36,6 +36,8 @@ export default {
 <style lang="scss">
   .bodyDetail {
     display: flex;
+    text-align: left;
+    justify-content: flex-start;
     flex-direction: column;
     font-style: normal;
     font-variant-ligatures: normal;
@@ -51,5 +53,8 @@ export default {
   .img {
     width: 100%;
     height: 100%;
+  }
+  .para {
+    text-align: left;
   }
 </style>

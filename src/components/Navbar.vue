@@ -2,10 +2,10 @@
 div
   div(class='navbar')
     span(class='header' v-on:click='header') Charlie Wilhite
-    <el-tabs@tab-click='handleClick'>
-      <el-tab-pane label="Blog" name="first"></el-tab-pane>
-      <el-tab-pane label="Projects" name="second"></el-tab-pane>
-      <el-tab-pane label="About Me" name="third"></el-tab-pane>
+    <el-tabs@tab-click='handleClick' class='tabs'>
+      <el-tab-pane class='tab-detail' label="Blog" name="first"></el-tab-pane>
+      <el-tab-pane class='tab-detail' label="Projects" name="second"></el-tab-pane>
+      <el-tab-pane class='tab-detail' label="About Me" name="third"></el-tab-pane>
     </el-tabs>
     div(class='social')
       span(class='follow-sub') Follow me...
@@ -60,6 +60,18 @@ export default {
     cursor: pointer;
     color: #000;
     text-decoration: none;
+  }
+  .tabs {
+    pointer-events: none;
+  }
+  #tab-first {
+    pointer-events: auto;
+  }
+  #tab-second {
+    pointer-events: auto;
+  }
+  #tab-third {
+    pointer-events: auto;
   }
   @media screen and (max-width: 500px) {
     top: 9px;

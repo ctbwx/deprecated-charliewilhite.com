@@ -13,7 +13,6 @@
 <script>
 import axios from 'axios';
 import moment from 'moment';
-// import data from '../assets/data';
 
 export default {
   data() {
@@ -32,7 +31,7 @@ export default {
   },
   filters: {
     moment(date) {
-      return moment(date).format('MMM Do YY');
+      return moment(date).format('MMMM Do YYYY, h:mm:ss a');
     },
   },
   methods: {
