@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import data from '@/assets/data';
+// import data from '@/assets/data';
 import axios from 'axios';
 import moment from 'moment';
 import Body from './body';
