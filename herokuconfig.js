@@ -1,5 +1,3 @@
-require('dotenv').config({ path: '../env.env' });
-
 module.exports = {
   host: 'ec2-184-73-175-95.compute-1.amazonaws.com',
   user: 'wpendjwzlaqsfx',
