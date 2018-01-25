@@ -26,5 +26,10 @@ export default new Router({
       name: 'Blog Detail',
       component: BlogDetail
     },
+    {
+      path: '/projects',
+      name: 'Projects',
+      component: Projects
+    },
   ],
 });
