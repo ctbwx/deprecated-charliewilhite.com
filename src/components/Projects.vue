@@ -1,10 +1,9 @@
 <template lang="pug">
-  div(class='projects-wrapper')
-    <el-col :span="8" v-for="item in projects" :key="item.id">
-      <el-card :body-style="{ padding: '0px' }">
-      img(:src='item.image')
-      </el-card>
-    </el-col>
+  div(class='project-wrapper')
+    el-col(class='project-list' :span="8" v-for="item in projects" :key="item.id")
+      el-card(class='project-card')
+        div(class='project-info') {{ item.title }}
+        img(:src='item.image')
 </template>
 
 <script>
@@ -20,5 +19,10 @@ export default {
 </script>
 
 <style lang="scss">
-
+  .el-card__body {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+  }
+  
 </style>
