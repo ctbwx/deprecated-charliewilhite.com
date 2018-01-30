@@ -3,24 +3,24 @@ const data = {
     {
       id: 1,
       title: 'Hackfolio',
-      image: ,
+      image: 'https://i.imgur.com/YXnEzwJ.png',
       link: 'https://hackfolio.herokuapp.com',
       source: 'https://github.com/simplenclean/Hackfolio',
     },
-    {
-      id: 2,
-      title: 'Hackfolio',
-      image: './hackfolio_example.png',
-      link: 'https://hackfolio.herokuapp.com',
-      source: 'https://github.com/simplenclean/Hackfolio',
-    },
-    {
-      id: 3,
-      title: 'Hackfolio',
-      image: './hackfolio_example.png',
-      link: 'https://hackfolio.herokuapp.com',
-      source: 'https://github.com/simplenclean/Hackfolio',
-    },
+    // {
+    //   id: 2,
+    //   title: 'Hackfolio',
+    //   image: 'https://i.imgur.com/YXnEzwJ.png',
+    //   link: 'https://hackfolio.herokuapp.com',
+    //   source: 'https://github.com/simplenclean/Hackfolio',
+    // },
+    // {
+    //   id: 3,
+    //   title: 'Hackfolio',
+    //   image: 'https://i.imgur.com/YXnEzwJ.png',
+    //   link: 'https://hackfolio.herokuapp.com',
+    //   source: 'https://github.com/simplenclean/Hackfolio',
+    // },
   ],
 };
 
