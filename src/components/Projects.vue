@@ -1,9 +1,9 @@
 <template lang="pug">
   div(class='project-wrapper')
-    el-col(class='project-list' :span="8" v-for="item in projects" :key="item.id")
-      el-card(class='project-card')
+    div(class='project-list')
+      div(class='project-card' v-for="item in projects" :key="item.id")
+        img(:src='item.image' class='project-img')
         div(class='project-info') {{ item.title }}
-        img(:src='item.image')
 </template>
 
 <script>
@@ -19,10 +19,56 @@ export default {
 </script>
 
 <style lang="scss">
-  .el-card__body {
+  .project-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .project-card {
     display: flex;
     flex-direction: column;
-    padding: 0px;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    width: 300px;
+    height: 300px;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 1px 2px rgba(0,0,0,0.15), 0 1px 8px rgba(0,0,0,0.1);
+    transition: all 0.3s ease-in-out;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translateZ(0) scale(1.0, 1.0);
+    -webkit-font-smoothing: antialiased !important;
+    transform: translateZ(0);
   }
-  
+  .project-card::after {
+    content: "";
+    border-radius: 5px;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  }
+  .project-card:hover {
+    -webkit-transform: scale(1.25, 1.25);
+    transform: scale(1.01, 1.01);
+  }
+
+  .project-card:hover::after {
+    opacity: 1;
+  }
+  .project-info {
+    text-align: center;
+  }
+  .project-img {
+    width: 100%;
+    height: 100%;
+  }
 </style>
