@@ -2,7 +2,7 @@
   div(class='project-wrapper')
     div(class='project-list')
       div(class='project-card' v-for="item in projects" :key="item.id")
-        img(:src='item.image' class='project-img')
+        a(:href='item.link' target='_blank'): img(:src='item.image' class='project-img')
         div(class='project-info') {{ item.title }}
 </template>
 
@@ -30,6 +30,7 @@ export default {
     flex-direction: column;
     margin-top: 2%;
     margin-bottom: 5%;
+    cursor: pointer;
     width: 300px;
     height: 300px;
     border-radius: 5px;
@@ -66,6 +67,13 @@ export default {
   }
   .project-info {
     text-align: center;
+    margin-top: 3%;
+    text-transform: uppercase;
+    font-family: Source Sans Pro, Helvetica Neue, Arial,sans-serif;
+    letter-spacing: 0.18em;
+    font-size: 16px;
+    font-weight: 300;
+    color: rgb(182, 182, 182);
   }
   .project-img {
     width: 100%;

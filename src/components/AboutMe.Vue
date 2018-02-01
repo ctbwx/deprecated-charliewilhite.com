@@ -20,16 +20,17 @@
                       span(class='detail') Current
                       br
                       br
-                      | Currently I'm looking for opportunities to learn more about machine learning, and recursive neural networks. I have a curiosity for data science, as
-                      | I believe a further understanding of it will lead us to our next monumental technological breakthrough. Also being able to <em>create a brain</em>
-                      | seems pretty damn cool.
+                      | Currently I'm working a lot in Unity, building games to get a better understanding of how game development works, and also to
+                      | become more profient with C-Sharp. I'm also looking for opportunities to learn more about machine learning, and recursive neural networks.
+                      | I have a curiosity for data science, as I believe a further understanding of it will lead us to our next monumental technological breakthrough.
+                      | Also being able to <em>create a brain</em> seems pretty damn cool.
                       br
                       br
                       span(class='detail') Personal
                       br
                       br
                       | When I'm not coding or reading about code, I'm probably gaming or bouldering (rock climbing, but on big rocks instead of mountains).
-                      | My favorite games of all time are Dota 2, Dark Souls, and Kingdom Hearts.
+                      | My favorite games of all time are Dota 2, Dark Souls, Monster Hunter, and Kingdom Hearts.
 </template>
 
 <script>
