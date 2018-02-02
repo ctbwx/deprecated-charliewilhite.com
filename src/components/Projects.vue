@@ -28,7 +28,7 @@ export default {
   .project-card {
     display: flex;
     flex-direction: column;
-    margin-top: 2%;
+    margin-top: 3%;
     margin-bottom: 5%;
     cursor: pointer;
     width: 300px;
@@ -68,6 +68,7 @@ export default {
   .project-info {
     text-align: center;
     margin-top: 3%;
+    margin-bottom: 3%;
     text-transform: uppercase;
     font-family: Source Sans Pro, Helvetica Neue, Arial,sans-serif;
     letter-spacing: 0.18em;
