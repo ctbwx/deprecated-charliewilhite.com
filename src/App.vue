@@ -2,7 +2,9 @@
   <div class="app">
     <navbar/>
     <router-view/>
-    <foot/>
+    <div class='wrapper'>
+      <foot/>
+    </div>
   </div>
 </template>
 
@@ -33,13 +35,27 @@ export default {
     font-size: 14px;
     color:rgb(182, 182, 182);
 
-    position:absolute;
-    vertical-align: baseline;
-    bottom:0;
+    position: absolute;
+    bottom: 0;
     margin: 0;
     padding: 1%;
     left: 0;
     right: 0;
     text-align: center;
+  }
+
+  .wrapper {
+    height: 100%;
+    position: relative;
+  }
+
+  ::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+  }
+  ::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 20px;
+    border-radius: 15px;
+    background: rgba(0, 0, 0, 0.8);
   }
 </style>
