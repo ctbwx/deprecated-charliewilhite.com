@@ -5,6 +5,7 @@ import AboutMe from '../components/aboutme';
 import Projects from '../components/projects';
 import Blog from '../components/blog';
 import BlogDetail from '../components/blogdetail';
+import Landing from '../components/landingPage';
 
 Vue.use(Router);
 
@@ -30,6 +31,11 @@ export default new Router({
       path: '/projects',
       name: 'Projects',
       component: Projects
+    },
+    {
+      path: '/',
+      name: 'Landing',
+      component: Landing
     },
   ],
 });

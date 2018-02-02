@@ -31,7 +31,7 @@ export default {
       }
     },
     header() {
-      this.$router.push('/blog');
+      this.$router.push('/');
     },
   },
 };
