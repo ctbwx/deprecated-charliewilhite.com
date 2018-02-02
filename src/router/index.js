@@ -39,7 +39,7 @@ export default new Router({
       component: Contact
     },
     {
-      path: '/*',
+      path: '/',
       name: 'Landing',
       component: Landing
     },
