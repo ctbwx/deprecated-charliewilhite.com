@@ -7,6 +7,7 @@ import Blog from '../components/blog';
 import BlogDetail from '../components/blogdetail';
 import Landing from '../components/landingPage';
 import Contact from '../components/contact';
+import NotFound from '../components/notFound';
 
 Vue.use(Router);
 
@@ -43,5 +44,10 @@ export default new Router({
       name: 'Landing',
       component: Landing
     },
+    {
+      path: '/*',
+      name: 'Not Found',
+      component: NotFound
+    }
   ],
 });
