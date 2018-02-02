@@ -44,9 +44,9 @@ export default {
     -moz-animation-fill-mode:forwards;
     animation-fill-mode:forwards;
 
-    -webkit-animation-duration:1s;
-    -moz-animation-duration:1s;
-    animation-duration:1s;
+    -webkit-animation-duration:.3s;
+    -moz-animation-duration:.3s;
+    animation-duration:.3s;
   }
   .alert {
     position: absolute;
