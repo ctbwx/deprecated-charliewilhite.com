@@ -20,7 +20,7 @@
                       span(class='detail') Current
                       br
                       br
-                      | Currently I'm working a lot in Unity, building games to get a better understanding of how game development works, and also to
+                      | Currently I'm working with a lot in Unity, building games to get a better understanding of how game development works, and also to
                       | become more proficient with C-Sharp. I'm also looking for opportunities to learn more about machine learning, and recursive neural networks.
                       | I have a curiosity for data science, as I believe a further understanding of it will lead us to our next monumental technological breakthrough.
                       | Also being able to <em>create a brain</em> seems pretty damn cool.
