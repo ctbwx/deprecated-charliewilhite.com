@@ -6,6 +6,7 @@ import Projects from '../components/projects';
 import Blog from '../components/blog';
 import BlogDetail from '../components/blogdetail';
 import Landing from '../components/landingPage';
+import Contact from '../components/contact';
 
 Vue.use(Router);
 
@@ -33,7 +34,12 @@ export default new Router({
       component: Projects
     },
     {
-      path: '/',
+      path: '/contact',
+      name: 'Contact',
+      component: Contact
+    },
+    {
+      path: '/*',
       name: 'Landing',
       component: Landing
     },

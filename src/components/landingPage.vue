@@ -2,8 +2,8 @@
   div(class='landing-wrapper')
     div(class='main-content')
       p(class='one') Welcome to my website.
-      p(class='two') Feel free to look around.
-      p(class='three') Read my blog, check out my projects, or <b>contact</b> me about projects or professional opportunities.
+      p(class='two') This is my hub for projects, and also my blog where I write about tech, gaming, and anything else.
+      p(class='three') Feel free to look around, or <b>contact</b> me about projects or professional opportunities.
     div(class='bonfire')
       img(class='bonfire' src='https://s-media-cache-ak0.pinimg.com/originals/80/21/74/8021744fc275101ed9a4b75ace41f168.gif')
 </template>
@@ -28,9 +28,9 @@
     -moz-animation-fill-mode:forwards;
     animation-fill-mode:forwards;
 
-    -webkit-animation-duration:2s;
-    -moz-animation-duration:2s;
-    animation-duration:2s;
+    -webkit-animation-duration:1s;
+    -moz-animation-duration:1s;
+    animation-duration:1s;
   }
 
   .main-content {

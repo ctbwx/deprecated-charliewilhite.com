@@ -6,6 +6,7 @@ div
       <el-tab-pane class='tab-detail' label="Blog" name="first"></el-tab-pane>
       <el-tab-pane class='tab-detail' label="Projects" name="second"></el-tab-pane>
       <el-tab-pane class='tab-detail' label="About Me" name="third"></el-tab-pane>
+      <el-tab-pane class='tab-detail' label="Contact" name="fourth"></el-tab-pane>
     </el-tabs>
     div(class='social')
       span(class='follow-sub') Follow me...
@@ -26,8 +27,10 @@ export default {
         this.$router.replace('/blog');
       } else if (tab.label === 'Projects') {
         this.$router.replace('/projects');
-      } else {
+      } else if (tab.label === 'About Me') {
         this.$router.replace('/aboutme');
+      } else {
+        this.$router.replace('/contact');
       }
     },
     header() {
@@ -71,6 +74,9 @@ export default {
     pointer-events: auto;
   }
   #tab-third {
+    pointer-events: auto;
+  }
+  #tab-fourth {
     pointer-events: auto;
   }
   @media screen and (max-width: 500px) {
