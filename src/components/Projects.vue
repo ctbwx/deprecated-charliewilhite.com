@@ -24,6 +24,20 @@ export default {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
+
+    opacity:0;
+    opacity: 1 \9; /*just in case ie*/
+    -webkit-animation:fadeIn ease-in 1;
+    -moz-animation:fadeIn ease-in 1;
+    animation:fadeIn ease-in 1;
+
+    -webkit-animation-fill-mode:forwards;
+    -moz-animation-fill-mode:forwards;
+    animation-fill-mode:forwards;
+
+    -webkit-animation-duration:.3s;
+    -moz-animation-duration:.3s;
+    animation-duration:.3s;
   }
   .project-card {
     display: flex;

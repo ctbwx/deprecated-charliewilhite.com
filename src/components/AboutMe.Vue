@@ -21,7 +21,7 @@
                       br
                       br
                       | Currently I'm working a lot in Unity, building games to get a better understanding of how game development works, and also to
-                      | become more profient with C-Sharp. I'm also looking for opportunities to learn more about machine learning, and recursive neural networks.
+                      | become more proficient with C-Sharp. I'm also looking for opportunities to learn more about machine learning, and recursive neural networks.
                       | I have a curiosity for data science, as I believe a further understanding of it will lead us to our next monumental technological breakthrough.
                       | Also being able to <em>create a brain</em> seems pretty damn cool.
                       br
@@ -62,6 +62,20 @@ export default {
     font-size: 15px;
     line-height: 1.9em;
     font-family: Source Sans Pro, Helvetica Neue, Arial,sans-serif;
+
+    opacity:0;
+    opacity: 1 \9; /*just in case ie*/
+    -webkit-animation:fadeIn ease-in 1;
+    -moz-animation:fadeIn ease-in 1;
+    animation:fadeIn ease-in 1;
+
+    -webkit-animation-fill-mode:forwards;
+    -moz-animation-fill-mode:forwards;
+    animation-fill-mode:forwards;
+
+    -webkit-animation-duration:.3s;
+    -moz-animation-duration:.3s;
+    animation-duration:.3s;
   }
   .detail {
     text-transform: uppercase;

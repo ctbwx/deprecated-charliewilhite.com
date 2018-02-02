@@ -40,14 +40,14 @@ export default {
 <style lang="scss">
 @import url(https://fonts.googleapis.com/css?family=Roboto+Mono);
 
-  ::-webkit-scrollbar { 
+  ::-webkit-scrollbar {
     width: 5px;
     height: 5px;
   }
-  ::-webkit-scrollbar-thumb { 
+  ::-webkit-scrollbar-thumb {
     -webkit-border-radius: 20px;
     border-radius: 15px;
-    background: rgba(0, 0, 0, 0.8); 
+    background: rgba(0, 0, 0, 0.8);
   }
   .blog-detail {
     display: flex;
@@ -58,6 +58,20 @@ export default {
     left: 0;
     right: 0;
     flex-direction: column;
+
+    opacity:0;
+    opacity: 1 \9; /*just in case ie*/
+    -webkit-animation:fadeIn ease-in 1;
+    -moz-animation:fadeIn ease-in 1;
+    animation:fadeIn ease-in 1;
+
+    -webkit-animation-fill-mode:forwards;
+    -moz-animation-fill-mode:forwards;
+    animation-fill-mode:forwards;
+
+    -webkit-animation-duration:.3s;
+    -moz-animation-duration:.3s;
+    animation-duration:.3s;
   }
   .body-post {
     padding-left: 3%;

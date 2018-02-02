@@ -3,14 +3,18 @@
     div(class='main-content')
       p(class='one') Welcome to my website.
       p(class='two') This is my hub for projects, and also my blog where I write about tech, gaming, and anything else.
-      p(class='three') Feel free to look around, or <b>contact</b> me about projects or professional opportunities.
+      p(class='three') Feel free to look around, or <b class='contact' v-on:click='contact'>contact</b> me about projects or professional opportunities.
     div(class='bonfire')
       img(class='bonfire' src='https://s-media-cache-ak0.pinimg.com/originals/80/21/74/8021744fc275101ed9a4b75ace41f168.gif')
 </template>
 
 <script>
   export default {
-
+    methods: {
+      contact() {
+        this.$router.replace('/contact');
+      },
+    },
   };
 </script>
 
@@ -44,6 +48,38 @@
   .bonfire {
     text-align: center;
     padding-top: 3%;
+  }
+
+  .contact {
+    position: relative;
+    text-decoration: none;
+    color: rgb(151, 219, 219);
+  }
+
+  .contact:hover {
+    color: #000;
+    cursor: pointer;
+  }
+
+  .contact:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+  }
+
+  .contact:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
   }
 
   @-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }

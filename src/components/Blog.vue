@@ -1,10 +1,10 @@
 <template lang="pug">
   div(class='blog')
     el-container(class='entry' v-on:click.native="detail" v-for='item in blogs' :id='item.id' :key='item.id')
-      el-container(class='main') 
+      el-container(class='main')
         span(class='blog-header') {{ item.title }}
         el-main(class='body') {{ item.teaser }}
-        el-footer(class='footer') 
+        el-footer(class='footer')
           span(class='footer-text') {{ item.created_at | moment }}
       el-aside(class='aside' v-if='item.thumbnail !== null')
         img(class='aside-image' :src='item.thumbnail')
@@ -44,14 +44,14 @@ export default {
 </script>
 
 <style lang="scss">
-  ::-webkit-scrollbar { 
+  ::-webkit-scrollbar {
     width: 5px;
     height: 5px;
   }
-  ::-webkit-scrollbar-thumb { 
+  ::-webkit-scrollbar-thumb {
     -webkit-border-radius: 20px;
     border-radius: 15px;
-    background: rgba(0, 0, 0, 0.8); 
+    background: rgba(0, 0, 0, 0.8);
   }
   .blog {
     width: 80%;
@@ -60,6 +60,20 @@ export default {
     left: 0;
     right: 0;
     flex-direction: column;
+
+    opacity:0;
+    opacity: 1 \9; /*just in case ie*/
+    -webkit-animation:fadeIn ease-in 1;
+    -moz-animation:fadeIn ease-in 1;
+    animation:fadeIn ease-in 1;
+
+    -webkit-animation-fill-mode:forwards;
+    -moz-animation-fill-mode:forwards;
+    animation-fill-mode:forwards;
+
+    -webkit-animation-duration:.3s;
+    -moz-animation-duration:.3s;
+    animation-duration:.3s;
   }
   .entry {
     cursor: pointer;
