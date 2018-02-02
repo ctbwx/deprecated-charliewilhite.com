@@ -24,7 +24,7 @@ export default {
   async created() {
     try {
       const response = await axios.get('/api/blog');
-      this.blogs = response.data;
+      this.blogs = response.data.reverse();
     } catch (e) {
       this.errors.push(e);
     }
