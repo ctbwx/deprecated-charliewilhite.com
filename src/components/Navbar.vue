@@ -81,6 +81,9 @@ export default {
   }
   @media screen and (max-width: 500px) {
     top: 9px;
+    .header {
+      top: 0px;
+    }
   }
   .header:hover {
     color: #000;
