@@ -1,13 +1,15 @@
 <template lang='pug'>
   div(class='contact-wrapper')
-    div(class='img-wrap')
-      img(class='email' src='https://i.imgur.com/y6ZTorW.png')
-    span(class='contact-detail' v-model='email') {{ email }}
-      el-button(plain class='copy-button' v-clipboard:copy="email") Copy
-    div(class='img-wrap')
-      img(class='phone' src='https://i.imgur.com/ELSuoSC.png')
-    span(class='contact-detail' v-model='number') {{ number }}
-      el-button(plain class='copy-button' v-clipboard:copy="number") Copy
+    div(class='contact-card-wrapper')
+      div(class='img-wrap')
+        img(class='email' src='https://i.imgur.com/y6ZTorW.png')
+      span(class='contact-detail' v-model='email') {{ email }}
+        el-button(plain class='copy-button' v-clipboard:copy="email") Copy
+    div(class='contact-card-wrapper')
+      div(class='img-wrap')
+        img(class='phone' src='https://i.imgur.com/ELSuoSC.png')
+      span(class='contact-detail' v-model='number') {{ number }}
+        el-button(plain class='copy-button' v-clipboard:copy="number") Copy
 </template>
 
 <script>
@@ -27,10 +29,16 @@ export default {
 </script>
 
 <style lang='scss'>
-  .contact-wrapper {
+  .contact-card-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  .contact-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
     flex-wrap: wrap;
     justify-content: space-evenly;
 
@@ -61,7 +69,7 @@ export default {
     width: 100px;
   }
   .copy-button {
-    margin: 2%;
+    margin: 5%;
   }
   .img-wrap {
     height: 200px;
@@ -70,23 +78,14 @@ export default {
   }
   .email {
     width: 100%;
-    border-radius: 7px;
-    border-style: solid;
-    border-width: 2px;
-    border-color: rgb(227, 227, 227);
   }
   .phone {
     width: 100%;
-    border-radius: 7px;
-    border-style: solid;
-    border-width: 2px;
-    border-color: rgb(227, 227, 227);
   }
   .contact-detail {
     font-family: Source Sans Pro, Helvetica Neue, Arial,sans-serif;
-    text-align: center;
     letter-spacing: 0.12em;
     font-size: 22px;
-    padding-top: 3%;
+    padding: 5%;
   }
 </style>
