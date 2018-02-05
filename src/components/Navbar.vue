@@ -128,7 +128,7 @@ export default {
     }
     @media screen and (max-width: 500px) {
       img {
-        margin: 3px;
+        transform: translateY(-150%);
         width: 21px;
         height: 21px;
       }
