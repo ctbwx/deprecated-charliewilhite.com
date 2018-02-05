@@ -132,8 +132,9 @@ export default {
     @media screen and (max-width: 500px) {
       img {
         transform: translateY(-150%);
-        width: 21px;
-        height: 21px;
+        padding-right: 3px;
+        width: 25px;
+        height: 25px;
       }
     }
   }
