@@ -52,7 +52,7 @@ export default {
   .blog-detail {
     display: flex;
     font-family: Roboto Mono;
-    width: 80%;
+    max-width: 65%;
     margin: auto;
     padding-top: 5%;
     left: 0;
