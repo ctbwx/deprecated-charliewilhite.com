@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import Navbar from '@/components/navbar';
+import Navbar from '@/components/Navbar';
 import Footer from '@/components/footer';
 
 export default {
@@ -42,6 +42,25 @@ export default {
     left: 0;
     right: 0;
     text-align: center;
+  }
+
+  .social {
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    padding: 1%;
+    right: 0;
+    text-align: center;
+  }
+
+  @media screen and (max-width: 500px) {
+    .social {
+      left: 0;
+      bottom: 5%;
+    }
+    .follow-sub {
+      display: none;
+    }
   }
 
   .wrapper {

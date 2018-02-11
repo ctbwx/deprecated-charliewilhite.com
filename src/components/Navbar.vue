@@ -8,11 +8,6 @@ div
       <el-tab-pane class='tab-detail' label="About Me" name="third"></el-tab-pane>
       <el-tab-pane class='tab-detail' label="Contact" name="fourth"></el-tab-pane>
     </el-tabs>
-    div(class='social')
-      span(class='follow-sub') Follow me...
-      a(href='https://github.com/simplenclean' target='_blank'): img(src='../assets/github.png')
-      a(href='https://www.instagram.com/simplenclean_/' target='_blank'): img(src='../assets/instagram.png')
-      a(href='https://www.linkedin.com/in/charliewilhite/' target='_blank'): img(src='../assets/linkedin.png')
 </template>
 
 <script>
@@ -64,21 +59,6 @@ export default {
     color: #000;
     text-decoration: none;
   }
-  .tabs {
-    pointer-events: none;
-  }
-  #tab-first {
-    pointer-events: auto;
-  }
-  #tab-second {
-    pointer-events: auto;
-  }
-  #tab-third {
-    pointer-events: auto;
-  }
-  #tab-fourth {
-    pointer-events: auto;
-  }
   @media screen and (max-width: 500px) {
     top: 9px;
     .header {
@@ -106,37 +86,6 @@ export default {
     visibility: visible;
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
-  }
-  .social {
-    .follow-sub {
-      position: relative;
-      vertical-align: 30%;
-    }
-    @media screen and (max-width: 500px) {
-      .follow-sub {
-        display: none;
-      }
-    }
-    position: fixed;
-    letter-spacing: 0.20em;
-    font-weight: 300;
-    font-size: 10px;
-    color:rgb(182, 182, 182);
-    right: 0;
-    top: 30%;
-    img {
-        margin: 3px;
-        width: 27px;
-        height: 27px;
-    }
-    @media screen and (max-width: 500px) {
-      img {
-        transform: translateY(-130%);
-        padding-right: 5px;
-        width: 25px;
-        height: 25px;
-      }
-    }
   }
 }
 </style>
