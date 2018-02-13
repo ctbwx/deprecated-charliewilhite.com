@@ -39,6 +39,7 @@ export default {
     flex-direction: row;
     align-items: center;
     text-align: center;
+    margin-top: 1%;
     flex-wrap: wrap;
     justify-content: space-evenly;
 
@@ -74,7 +75,6 @@ export default {
   .img-wrap {
     height: 200px;
     width: 200px;
-    margin-top: 5%;
   }
   .email {
     width: 100%;

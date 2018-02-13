@@ -24,8 +24,8 @@ export default {
 <style lang='scss'>
   .app {
     position: absolute;
-    height: 99%;
-    width: 99%;
+    height: 100%;
+    width: 100%;
   }
 
   .foot-detail {

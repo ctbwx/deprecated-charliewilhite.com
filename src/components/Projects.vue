@@ -19,6 +19,10 @@ export default {
 </script>
 
 <style lang="scss">
+  .project-wrapper {
+    margin-top: 1%;
+  }
+
   .project-list {
     display: flex;
     flex-direction: row;
@@ -42,7 +46,6 @@ export default {
   .project-card {
     display: flex;
     flex-direction: column;
-    margin-top: 3%;
     margin-bottom: 5%;
     cursor: pointer;
     width: 300px;

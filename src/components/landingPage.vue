@@ -22,6 +22,7 @@
   .landing-wrapper {
     display: flex;
     flex-direction: column;
+    margin-top: 1%;
     opacity:0;
     opacity: 1 \9; /*just in case ie*/
     -webkit-animation:fadeIn ease-in 1;

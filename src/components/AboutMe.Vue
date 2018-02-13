@@ -41,6 +41,7 @@ export default {
 
 <style lang="scss">
   .about-container {
+    margin-top: 1%;
     display:-webkit-box;
     -webkit-box-align:center;
     -webkit-box-pack:center;
@@ -52,7 +53,6 @@ export default {
     justify-content: center;
     width: 75%;
     height: 75%;
-    padding-top: 5%;
     font-style: normal;
     font-variant-ligatures: normal;
     font-variant-caps: normal;
@@ -87,7 +87,7 @@ export default {
   }
   .pic {
     flex: 1;
-    transform: translateY(25%);
+    margin-top: 1%;
     max-width: 600px;
     max-height: 400px;
     -moz-box-shadow: 1px 2px 3px rgba(0,0,0,.5);

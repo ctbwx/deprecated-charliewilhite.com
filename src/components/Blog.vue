@@ -56,7 +56,7 @@ export default {
   .blog {
     width: 80%;
     margin: auto;
-    padding-top: 5%;
+    margin-top: 1%;
     left: 0;
     right: 0;
     flex-direction: column;

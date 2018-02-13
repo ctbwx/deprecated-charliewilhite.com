@@ -17,11 +17,11 @@ export default {
 .not-found-wrapper {
   display: flex;
   flex-direction: column;
+  margin-top: 1%;
   align-items: center;
 }
 .not-found {
   // Text
-  padding-top: 3%;
   font-family: Source Sans Pro, Helvetica Neue, Arial,sans-serif;
   text-align: center;
   letter-spacing: 0.12em;
