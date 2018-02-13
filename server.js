@@ -29,7 +29,6 @@ app.use(enforceHttps);
 app.use(express.static('dist'));
 
 /*-----------------------------------------------ROUTES-----------------------------------------*/
-
 app.get('/api/blog', (req, res) => {
   return db('blogs').select('*')
   .then(data => {
