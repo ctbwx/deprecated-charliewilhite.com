@@ -65,6 +65,27 @@ export default {
       top: 0px;
     }
   }
+  .tabs {
+    pointer-events: none;
+  }
+  #tab-first {
+    pointer-events: auto;
+  }
+  #tab-second {
+    pointer-events: auto;
+  }
+  #tab-third {
+    pointer-events: auto;
+  }
+  #tab-fourth {
+    pointer-events: auto;
+  }
+  .el-tabs__nav-next {
+    pointer-events: auto;
+  }
+  .el-tabs__nav-prev {
+    pointer-events: auto;
+  }
   .header:hover {
     color: #000;
   }
