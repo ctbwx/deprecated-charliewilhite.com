@@ -4,7 +4,6 @@
     div(class='social')
       span(class='follow-sub') Follow me...
       a(href='https://github.com/simplenclean' target='_blank'): img(src='../assets/github.png')
-      a(href='https://www.instagram.com/simplenclean_/' target='_blank'): img(src='../assets/instagram.png')
       a(href='https://www.linkedin.com/in/charliewilhite/' target='_blank'): img(src='../assets/linkedin.png')
 </template>
 
