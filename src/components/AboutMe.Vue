@@ -9,14 +9,8 @@
                       span(class='detail') Background
                       br
                       br
-                      | I'm a full stack software engineer from Austin, TX.
-                      | I got into computer science and programming because I have always been enamored with the idea that it's possible to
-                      | create things from seemingly nothing. With 0's and 1's I can weave together something expressive of me, and practical to the world.
-                      | That's powerful. I started programming about 5 years ago in Java, building rudimentary desktop graphics and algorithms. From there
-                      | my desire to become a creator was temporarily muddled by school, stress, and other arbitrary life forces. All the while I was teaching myself python and some
-                      | basic web development skills, however ultimately I wasn't happy with my life. So I quit my job, got into Hack Reactor and learned how to take my programming knowledge that I was
-                      | slowly building up over the years and formed it into something tangible. I now possess the capability to build scalable full stack applications, that are user friendly and
-                      | efficient.
+                      | I became fascinated with computer science and programming because I have always been enamoured with the idea that it’s possible to create something from nothing. With 0's and 1's I can weave together something expressive of me that is practical to the world. That’s powerful. I started programming about 5 years ago in Java, building rudimentary desktop graphics and algorithms, which then led me to teach myself python and
+                      | web development. Following my passion, I enrolled at an immersive software engineering course and further developed my programming knowledge, honing and defining these assets into a powerful skillset. I now possess the ability to build scalable full stack applications that are user friendly and efficient.
                       br
                       br
                       span(class='detail') Current
