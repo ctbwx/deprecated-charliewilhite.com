@@ -28,7 +28,6 @@ app.use(favicon(__dirname + '/public/images/favicon.ico'));
 app.use(enforceHttps);
 app.use(express.static('dist'));
 
-/*-----------------------------------------------ROUTES-----------------------------------------*/
 app.get('/api/blog', (req, res) => {
   return db('blogs').select('*')
   .then(data => {
@@ -67,7 +66,6 @@ app.post('/api/blog', (req, res) => {
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, 'dist', 'index.html'));
 });
-/*----------------------------------------------------------------------------------------------*/
 
 const port = process.env.PORT || 3002;
 server.listen(port);
