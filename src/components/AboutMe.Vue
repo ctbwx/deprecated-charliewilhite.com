@@ -1,7 +1,7 @@
 <template lang="pug">
   div(class='about-container')
     div(class='aboutme')
-      img(class='pic' src='../assets/charlie4.jpg')
+      img(class='pic' src='https://i.imgur.com/I4Nz8y4.jpg')
       div(class='buffer')
       p(class='info') Hello, my name is Charlie.
                       br
@@ -10,11 +10,13 @@
                       br
                       br
                       | I'm a full stack software engineer from Austin, TX.
-                      | In high school I took advanced placement computer science courses (in Java), at the time I didn't really know what computer science was. It just sounded fun.
-                      | I quickly learned that programming was <em>magical</em> and I became obsessed with it.
-                      | Since then I've graduated from <a href='https://www.hackreactor.com/' target='_blank'>Hack Reactor</a> in November 2017,
-                      | then was hired on as a Hacker in Residence: Project Lead, where I mentored students, contstructed optional technical sprints, and
-                      | honed my skills as a software engineer.
+                      | I got into computer science and programming because I have always been enamored with the idea that it's possible to
+                      | create things from seemingly nothing. With 0's and 1's I can weave together something expressive of me, and practical to the world.
+                      | That's powerful. I started programming about 5 years ago in Java, building rudimentary desktop graphics and algorithms. From there
+                      | my desire to become a creator was temporarily muddled by school, stress, and other arbitrary life forces. All the while I was teaching myself python and some
+                      | basic web development skills, however ultimately I wasn't happy with my life. So I quit my job, got into Hack Reactor and learned how to take my programming knowledge that I was
+                      | slowly building up over the years and formed it into something tangible. I now possess the capability to build scalable full stack applications, that are user friendly and
+                      | efficient.
                       br
                       br
                       span(class='detail') Current
@@ -29,8 +31,10 @@
                       span(class='detail') Personal
                       br
                       br
-                      | When I'm not coding or reading about code, I'm probably gaming or bouldering (rock climbing, but on big rocks instead of mountains).
-                      | My favorite games of all time are Dota 2, Dark Souls, Monster Hunter, and Kingdom Hearts.
+                      | I used to be a huge gamer, I think I could be classified as semi-professional in Dota2. I played in house JoinDota league, and
+                      | had over 5000 thousand hours on the game. When I really care about something I'll pour my whole self into it. Aside from gaming I
+                      | love the great outdoors, growing up in Montana I formed a connection with the mountains, snow, and fly fishing. I'm an avid rock climber,
+                      | novice fisherman, and mountain biker.
 </template>
 
 <script>
