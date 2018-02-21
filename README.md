@@ -1,6 +1,6 @@
 # charliewilhite.com
 
-> My personal blog, portfolio and point of contact. 
+> My personal blog, portfolio and point of contact.
 > Built with vue and <3.
 
 ## Build Setup
@@ -26,7 +26,16 @@ npm run e2e
 
 # run all tests
 npm test
-```'
+```
 
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
 
+## Contributing
+
+`git add .` any changes made
+
+`git commit -m` with a message describing the changes
+
+`git push` to your remote branch
+
+email ctbwilhite@gmail.com to have commits published to production.
