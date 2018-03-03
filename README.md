@@ -38,4 +38,6 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 
 `git push` to your remote branch
 
+Open a pull request on github and wait for review.
+
 email ctbwilhite@gmail.com to have commits published to production.
