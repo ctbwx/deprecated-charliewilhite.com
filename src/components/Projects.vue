@@ -50,6 +50,7 @@ export default {
     cursor: pointer;
     width: 300px;
     height: 300px;
+    margin-top: 4%;
     border-radius: 5px;
     background-color: rgb(255, 255, 255);
     box-shadow: 0 1px 2px rgba(0,0,0,0.15), 0 1px 8px rgba(0,0,0,0.1);
