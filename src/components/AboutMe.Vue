@@ -115,7 +115,11 @@ export default {
   }
   @media screen and (max-width: 500px) {
     .el-carousel {
-      height: 150px;
+      height: 275px;
+      overflow: hidden;
+    }
+    img {
+      height: 50%;
     }
   }
   .info {
