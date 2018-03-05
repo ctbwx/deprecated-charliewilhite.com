@@ -2,7 +2,7 @@
   div(class='about-container')
     div(class='aboutme')
       div(class='pic')
-        <el-carousel trigger="click">
+        <el-carousel trigger="click" height="600px">
           <el-carousel-item v-for="item in images" :key="item">
             img(:src='item')
           </el-carousel-item>
@@ -40,8 +40,10 @@ export default {
   data() {
     return {
       images: [
-        'https://i.imgur.com/I4Nz8y4.jpg',
         'https://i.imgur.com/bKUTaki.jpg',
+        'https://i.imgur.com/a7D217N.jpg',
+        'https://i.imgur.com/LXAYDb7.jpg',
+        'https://i.imgur.com/MSO4KMM.jpg',
       ],
     };
   },
@@ -102,14 +104,18 @@ export default {
     -webkit-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
     box-shadow: 1px 2px 3px rgba(0,0,0,.5);
   }
+  img {
+    width: 100%;
+    height: 100%;
+  }
   .buffer {
     flex: 2;
     max-width: 100px;
     max-height: 100px;
   }
   @media screen and (max-width: 500px) {
-    .buffer {
-      display: none;
+    .el-carousel {
+      height: 150px;
     }
   }
   .info {
