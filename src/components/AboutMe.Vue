@@ -2,7 +2,7 @@
   div(class='about-container')
     div(class='aboutme')
       div(class='pic')
-        <el-carousel trigger="click" height="650px">
+        <el-carousel trigger="click" height="800px">
           <el-carousel-item v-for="item in images" :key="item">
             img(class='personal_img' :src='item')
           </el-carousel-item>
@@ -115,10 +115,10 @@ export default {
   }
   @media screen and (max-width: 500px) {
     .el-carousel {
-      height: 275px;
+      height: 300px;
       overflow: hidden;
     }
-    img {
+    .personal_img {
       height: 50%;
     }
   }
