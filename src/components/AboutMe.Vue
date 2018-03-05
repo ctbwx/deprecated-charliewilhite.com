@@ -2,9 +2,9 @@
   div(class='about-container')
     div(class='aboutme')
       div(class='pic')
-        <el-carousel trigger="click" height="600px">
+        <el-carousel trigger="click" height="650px">
           <el-carousel-item v-for="item in images" :key="item">
-            img(:src='item')
+            img(class='personal_img' :src='item')
           </el-carousel-item>
         </el-carousel>
       p(class='info') Hello, my name is Charlie.
@@ -104,7 +104,7 @@ export default {
     -webkit-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
     box-shadow: 1px 2px 3px rgba(0,0,0,.5);
   }
-  img {
+  .personal_img {
     width: 100%;
     height: 100%;
   }
