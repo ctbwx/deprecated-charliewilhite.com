@@ -1,8 +1,12 @@
 <template lang="pug">
   div(class='about-container')
     div(class='aboutme')
-      img(class='pic' src='https://i.imgur.com/I4Nz8y4.jpg')
-      div(class='buffer')
+      div(class='pic')
+        <el-carousel trigger="click">
+          <el-carousel-item v-for="item in images" :key="item">
+            img(:src='item')
+          </el-carousel-item>
+        </el-carousel>
       p(class='info') Hello, my name is Charlie.
                       br
                       br
@@ -25,7 +29,7 @@
                       span(class='detail') Personal
                       br
                       br
-                      | I used to be a huge gamer, I think I could be classified as semi-professional in Dota2. I played in house JoinDota league, and
+                      | I am a huge gamer, I think I could be classified as semi-professional in Dota2. I played in house JoinDota league, and
                       | had over 5000 thousand hours on the game. When I really care about something I'll pour my whole self into it. Aside from gaming I
                       | love the great outdoors, growing up in Montana I formed a connection with the mountains, snow, and fly fishing. I'm an avid rock climber,
                       | novice fisherman, and mountain biker.
@@ -33,7 +37,14 @@
 
 <script>
 export default {
-
+  data() {
+    return {
+      images: [
+        'https://i.imgur.com/I4Nz8y4.jpg',
+        'https://i.imgur.com/bKUTaki.jpg',
+      ],
+    };
+  },
 };
 </script>
 
@@ -46,7 +57,7 @@ export default {
   }
   .aboutme {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     width: 75%;
@@ -85,9 +96,8 @@ export default {
   }
   .pic {
     flex: 1;
-    margin-top: 1%;
-    max-width: 600px;
-    max-height: 400px;
+    margin-top: 3%;
+    margin-bottom: 3%;
     -moz-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
     -webkit-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
     box-shadow: 1px 2px 3px rgba(0,0,0,.5);
