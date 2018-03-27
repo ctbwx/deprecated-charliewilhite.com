@@ -1,12 +1,8 @@
 <template lang="pug">
   div(class='about-container')
     div(class='aboutme')
-      div(class='pic')
-        <el-carousel trigger="click" height="800px">
-          <el-carousel-item v-for="item in images" :key="item">
-            img(class='personal_img' :src='item')
-          </el-carousel-item>
-        </el-carousel>
+      div(class='pic-container')
+        img(class='pic' :src='image')
       p(class='info') Hello, my name is Charlie.
                       br
                       br
@@ -39,12 +35,7 @@
 export default {
   data() {
     return {
-      images: [
-        'https://i.imgur.com/bKUTaki.jpg',
-        'https://i.imgur.com/a7D217N.jpg',
-        'https://i.imgur.com/LXAYDb7.jpg',
-        'https://i.imgur.com/MSO4KMM.jpg',
-      ],
+      image: 'https://i.imgur.com/MSO4KMM.jpg',
     };
   },
 };
@@ -96,17 +87,14 @@ export default {
     font-weight: 300;
     color: rgb(182, 182, 182);
   }
-  .pic {
+  .pic-container {
     flex: 1;
     margin-top: 3%;
     margin-bottom: 3%;
-    -moz-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
-    -webkit-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
-    box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+    text-align: center;
   }
-  .personal_img {
-    width: 100%;
-    height: 100%;
+  .pic {
+    width: 600px;
   }
   .buffer {
     flex: 2;
@@ -118,8 +106,8 @@ export default {
       height: 300px;
       overflow: hidden;
     }
-    .personal_img {
-      height: 50%;
+    .pic {
+      width: 100%;
     }
   }
   .info {
