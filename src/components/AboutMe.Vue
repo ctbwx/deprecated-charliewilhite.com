@@ -16,16 +16,15 @@
                       span(class='detail') Current
                       br
                       br
-                      | Currently I'm working with a lot in Unity, building games to get a better understanding of how game development works, and also to
-                      | become more proficient with C-Sharp. I'm also looking for opportunities to learn more about machine learning, and recursive neural networks.
-                      | I have a curiosity for data science, as I believe a further understanding of it will lead us to our next monumental technological breakthrough.
-                      | Also being able to <em>create a brain</em> seems pretty damn cool.
+                      | Professionally I am currently a senior software engineer at Company.com. I help build services for small and medium sized businesses that help solve administrative
+                      | problems. Personally I am working with game devlopment software to get a better understanding of how modern video games are built, and to hopefully create a fun indie
+                      | game. My ultimate goal is to find a way to optimize procedural generation in video games with a machine learning algorithm.
                       br
                       br
                       span(class='detail') Personal
                       br
                       br
-                      | I am a huge gamer, I think I could be classified as semi-professional in Dota2. I played in house JoinDota league, and
+                      | I am a huge gamer, I was a semi-professional Dota2 player in high school. I played in house JoinDota league, and
                       | had over 5000 thousand hours on the game. When I really care about something I'll pour my whole self into it. Aside from gaming I
                       | love the great outdoors, growing up in Montana I formed a connection with the mountains, snow, and fly fishing. I'm an avid rock climber,
                       | novice fisherman, and mountain biker.
