@@ -4,11 +4,11 @@ const methodOverride = require('method-override');
 const bodyParser = require('body-parser');
 const favicon = require('serve-favicon');
 const http = require('http');
-const db = require('./db.js');
 
 const app = express();
 const server = http.createServer(app);
 
+// Ensures that anyone who navigates to the website will use a secure URL.
 const enforceHttps = (req, res, next) => {
   if (!req.secure &&
     req.get("x-forwarded-proto") !== "https" &&
@@ -27,41 +27,6 @@ app.use(methodOverride());
 app.use(favicon(__dirname + '/public/images/favicon.ico'));
 app.use(enforceHttps);
 app.use(express.static('dist'));
-
-app.get('/api/blog', (req, res) => {
-  return db('blogs').select('*')
-  .then(data => {
-    res.send(data);
-  })
-  .catch(err => {
-    console.error(err);
-    res.send('Unable to fetch blogs.');
-  });
-});
-
-app.get('/api/blog/:id', (req, res) => {
-  console.log('fetched');
-  return db('blogs').where({ id: req.params.id }).select('*')
-  .then(data => {
-    res.send(data);
-  })
-  .catch(err => {
-    console.error(err);
-    res.end('Unable to fetch blog.');
-  });
-});
-
-app.post('/api/blog', (req, res) => {
-  return db('blogs').insert(req.body)
-  .then(data => {
-    res.send(data);
-  })
-  .catch(err => {
-    console.error(err);
-    res.end('Unable to post with this body.')
-  })
-});
-
 
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, 'dist', 'index.html'));
